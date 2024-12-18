@@ -6,7 +6,82 @@
   <body>
     <center>
     <h1> Jackson Magnus's Website </h1>
-    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML: Metadata and CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        /* CSS: Navbar Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar a {
+                width: 100%;
+                text-align: left;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML: Navbar Structure -->
+    <nav class="navbar">
+        <div class="logo">Home Page</div>
+        <div class="menu">
+            <!-- Replace # with the actual links -->
+            <a href="index.html">Home</a>
+            <a href="projectspage.html">Projects</a>
+            <a href="photos.html">Photos of Me</a>
+            <a href="socials.html">Socials</a>
+        </div>
+    </nav>
+</body>
+</html>
       <br>
       <img src="https://t4.ftcdn.net/jpg/07/65/01/21/360_F_765012160_3USMuO0FlGg2XfdH9FbEBER2np5D9CnD.jpg">
   </body>
